@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 
 import '../../widgets/constag.dart';
 import '../../widgets/sizeconfig.dart';
@@ -20,7 +19,7 @@ class _ProfileSetupScreensState extends State<ProfileSetupScreens3> {
       body: SafeArea(
         child: SizedBox(
           width: double.infinity,
-          height: MediaQuery.of(context).size.height,
+          height: SizeConfig.screenHeight,
           child: SingleChildScrollView(
             child:
                 Column(crossAxisAlignment: CrossAxisAlignment.start, children: [

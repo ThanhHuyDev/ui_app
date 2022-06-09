@@ -20,15 +20,17 @@ class _MyWidgetState extends State<HomeScreens> {
         backgroundColor: Colors.transparent,
         elevation: 0.0,
         centerTitle: true,
-        title: Text(
-          'Slove',
-          style:
-              TextStyle(fontSize: getsizeHeight(25), color: Colors.deepPurple),
+        title: Image.asset(
+          'assets/images/logoSlove.png',
+          height: getsizeHeight(100),
         ),
-        // SvgPicture.asset(
-        //         'assets/images/logo.png',
-        //         height: getsizeHeight(20),
-        //       ),
+        leading: Padding(
+          padding: EdgeInsets.only(top: getsizeHeight(5),left: getsizeWidth(7 )),
+          child: const CircleAvatar(
+              backgroundImage: NetworkImage('https://www.dungplus.com/wp-content/uploads/2019/12/girl-xinh-1-480x600.jpg'),
+            ),
+          
+        ),
         actions: [
           IconButton(
               onPressed: () {},
@@ -87,8 +89,8 @@ class _MyWidgetState extends State<HomeScreens> {
               ],
             ),
             Container(
-              width: double.infinity,
-              height: getsizeHeight(50),
+                width: double.infinity,
+                height: getsizeHeight(50),
                 decoration: BoxDecoration(
                     color: Colors.red,
                     borderRadius: BorderRadius.only(

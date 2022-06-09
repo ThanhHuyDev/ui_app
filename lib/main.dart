@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ui_app/screens/home/home_screens.dart';
+import 'package:ui_app/screens/profile_user/profile_users.dart';
 import 'package:ui_app/screens/signin/sign_in_screens.dart';
+import 'package:ui_app/screens/splash/splash_screens.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         fontFamily: 'Muli'
       ),
-      home: const HomeScreens(),
+      home: const SplashScreens(),
     );
   }
 }

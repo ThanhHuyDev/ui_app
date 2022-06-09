@@ -29,16 +29,17 @@ class _SignInScreensState extends State<SignInScreens> {
                 SizedBox(
                   height: getsizeHeight(100),
                 ),
+                Image.asset('assets/images/logoSlove.png',
+                  height: getsizeHeight(130),
+                  width: getsizeWidth(130),
+                ),
                 SizedBox(
-                    height: getsizeHeight(90),
-                    width: getsizeWidth(90),
-                    child: Image.asset('assets/images/logo.png')),
-                SizedBox(
-                  height: getsizeHeight(150),
+                  height: getsizeHeight(100),
                 ),
                 Text(
                   "By clicking Log In, you agree with our Terms.\nLearn how we process your data in our Privacy\nPolicy and Cookies Policy.",
-                  style: TextStyle(color: Colors.white,fontSize: getsizeHeight(14)),
+                  style: TextStyle(
+                      color: Colors.white, fontSize: getsizeHeight(14)),
                 ),
                 SizedBox(
                   height: getsizeHeight(40),
@@ -46,7 +47,8 @@ class _SignInScreensState extends State<SignInScreens> {
                 GestureDetector(
                   onTap: () {},
                   child: Container(
-                      margin: EdgeInsets.only(left: getsizeWidth(30),right: getsizeWidth(30)),
+                      margin: EdgeInsets.only(
+                          left: getsizeWidth(30), right: getsizeWidth(30)),
                       decoration: BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(getsizeWidth(30)),
@@ -77,11 +79,13 @@ class _SignInScreensState extends State<SignInScreens> {
                 GestureDetector(
                   onTap: () {},
                   child: Container(
-                      margin: EdgeInsets.only(left: getsizeWidth(30), right: getsizeWidth(30)),
+                      margin: EdgeInsets.only(
+                          left: getsizeWidth(30), right: getsizeWidth(30)),
                       decoration: BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(getsizeWidth(30)),
-                          border: Border.all(width: getsizeWidth(1), color: Colors.black12)),
+                          border: Border.all(
+                              width: getsizeWidth(1), color: Colors.black12)),
                       width: double.infinity,
                       height: getsizeHeight(50),
                       child: Stack(
@@ -113,10 +117,12 @@ class _SignInScreensState extends State<SignInScreens> {
                             builder: (context) => const SignInPhoneScreens()));
                   }),
                   child: Container(
-                      margin: EdgeInsets.only(left: getsizeWidth(30) ,right: getsizeWidth(30)),
+                      margin: EdgeInsets.only(
+                          left: getsizeWidth(30), right: getsizeWidth(30)),
                       decoration: BoxDecoration(
                           gradient: kPrimaryGradientLeftToRightColor,
-                          borderRadius: BorderRadius.circular(getsizeWidth(30))),
+                          borderRadius:
+                              BorderRadius.circular(getsizeWidth(30))),
                       width: double.infinity,
                       height: getsizeHeight(50),
                       child: Stack(
@@ -149,7 +155,8 @@ class _SignInScreensState extends State<SignInScreens> {
                   },
                   child: Text(
                     'Don\'t have account? SignUp',
-                    style: TextStyle(color: Colors.white,fontSize: getsizeHeight(16)),
+                    style: TextStyle(
+                        color: Colors.white, fontSize: getsizeHeight(16)),
                   ),
                 ),
               ],
