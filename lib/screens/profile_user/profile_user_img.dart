@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ui_app/widgets/constag.dart';
+import 'package:ui_app/widgets/constants.dart';
 import 'package:ui_app/widgets/sizeconfig.dart';
 import 'components/custom_appbar.dart';
 

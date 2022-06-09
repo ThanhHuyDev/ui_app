@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ui_app/widgets/sizeconfig.dart';
 
-import '../../widgets/constag.dart';
+import '../../widgets/constants.dart';
 import '../profile_setup/profile_setup1.dart';
 
 class OtpForm extends StatefulWidget {

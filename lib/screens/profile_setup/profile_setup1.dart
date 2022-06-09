@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ui_app/screens/profile_setup/profile_setup2.dart';
 import 'package:ui_app/widgets/sizeconfig.dart';
 
-import '../../widgets/constag.dart';
+import '../../widgets/constants.dart';
 
 class ProfileSetupScreens1 extends StatefulWidget {
   const ProfileSetupScreens1({Key? key}) : super(key: key);

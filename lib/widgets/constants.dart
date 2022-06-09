@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'sizeconfig.dart';
 
+const kPrimaryColorDeepPurple = Colors.deepPurple;
+final kPrimaryColorDeepPurpleBackground = Colors.deepPurple[50];
 const kPrimaryColor = Color(0xFFFF7643);
 const kPrimaryLightColor = Color(0xFFFFECDF);
 const kPrimaryDartColor = Color(0xFF1B070B);
@@ -27,6 +29,17 @@ const kPrimaryGradientTopToBotColor = LinearGradient(
 );
 const kSecondaryColor = Color(0xFF979797);
 const kTextColor = Color(0xFF757575);
+const Color white = Colors.white;
+const Color grey = Colors.grey;
+const Color black = Colors.black;
+const Color green = Colors.green;
+const Color primary = Color(0xFFFD5C61);
+
+// gradient
+const Color yellow_one = Color(0xFFeec365);
+const Color yellow_two = Color(0xFFde9024);
+const Color primary_one = Color(0xFFfc3973);
+const Color primary_two = Color(0xFFfd5f60);
 
 const kAnimationDuration = Duration(milliseconds: 200);
 const headingStyle = TextStyle(

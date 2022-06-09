@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ui_app/screens/signup/sign_up_screens.dart';
 import 'package:ui_app/widgets/appbar.dart';
-import 'package:ui_app/widgets/constag.dart';
+import 'package:ui_app/widgets/constants.dart';
 import 'package:ui_app/widgets/sizeconfig.dart';
 
 class SignInPhoneScreens extends StatefulWidget {

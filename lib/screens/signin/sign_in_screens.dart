@@ -3,7 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:ui_app/screens/signin/signinphone.dart';
 import 'package:ui_app/widgets/sizeconfig.dart';
 
-import '../../widgets/constag.dart';
+import '../../widgets/constants.dart';
 
 class SignInScreens extends StatefulWidget {
   const SignInScreens({Key? key}) : super(key: key);

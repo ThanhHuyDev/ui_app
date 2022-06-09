@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui_app/screens/signin/sign_in_screens.dart';
-import 'package:ui_app/widgets/constag.dart';
+import 'package:ui_app/widgets/constants.dart';
 import 'package:ui_app/widgets/sizeconfig.dart';
 
 class SplashScreens extends StatelessWidget {

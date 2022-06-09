@@ -1,0 +1,9 @@
+export 'package:ui_app/screens/home/home_screens.dart';
+export 'package:ui_app/screens/profile_setup/profile_setup1.dart';
+export 'package:ui_app/screens/profile_setup/profile_setup2.dart';
+export 'package:ui_app/screens/profile_setup/profile_setup3.dart';
+export 'package:ui_app/screens/profile_user/profile_users.dart';
+export 'package:ui_app/screens/signin/sign_in_screens.dart';
+export 'package:ui_app/screens/signin/signinphone.dart';
+export 'package:ui_app/screens/signup/sign_up_screens.dart';
+export 'package:ui_app/screens/splash/splash_screens.dart';

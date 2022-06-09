@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui_app/screens/profile_setup/profile_setup3.dart';
-import '../../widgets/constag.dart';
+import '../../widgets/constants.dart';
 import '../../widgets/sizeconfig.dart';
 
 class ProfileSetupScreens2 extends StatefulWidget {
