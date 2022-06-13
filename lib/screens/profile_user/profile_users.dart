@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui_app/screens/profile_user/profile_user_body.dart';
-import 'package:ui_app/widgets/sizeconfig.dart';
+import 'package:ui_app/widgets/responsive.dart';
 class ProfileUserScreen extends StatefulWidget {
   const ProfileUserScreen({Key? key}) : super(key: key);
 

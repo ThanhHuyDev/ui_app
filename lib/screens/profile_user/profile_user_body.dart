@@ -4,7 +4,7 @@ import 'package:ui_app/screens/profile_user/components/infomation_plan.dart';
 import 'package:ui_app/screens/profile_user/components/infomation_user%20copy.dart';
 import 'package:ui_app/screens/profile_user/components/settings_user.dart';
 import 'package:ui_app/screens/profile_user/profile_user_img.dart';
-import 'package:ui_app/widgets/sizeconfig.dart';
+import 'package:ui_app/widgets/responsive.dart';
 
 class BodyProfileUser extends StatefulWidget {
   const BodyProfileUser({Key? key}) : super(key: key);

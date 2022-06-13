@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../widgets/constants.dart';
-import '../../widgets/sizeconfig.dart';
+import '../../widgets/responsive.dart';
 import '../home/home_screens.dart';
 
 class ProfileSetupScreens3 extends StatefulWidget {

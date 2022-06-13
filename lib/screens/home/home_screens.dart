@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:ui_app/data/chat_json.dart';
 import 'package:ui_app/screens/home/pages/page.dart';
-import 'package:ui_app/widgets/sizeconfig.dart';
+import 'package:ui_app/widgets/responsive.dart';
 
 import '../../widgets/constants.dart';
 import '../screens.dart';
@@ -44,25 +44,6 @@ class _HomeScreensState extends State<HomeScreens> {
       elevation: 0.0,
       centerTitle: true,
       title: Image.asset('assets/images/logo_slove_black.png', height: getsizeHeight(140)),
-      leading: GestureDetector(
-        onTap: (){
-          Navigator.push(context, MaterialPageRoute(builder: (context)=> const ProfileUserScreen()));
-        },
-        child: Padding(
-          padding: EdgeInsets.only(top: getsizeHeight(3), left: getsizeWidth(18)),
-          child: Container(
-            width: getsizeWidth(20),
-            height: getsizeHeight(20),
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              image: DecorationImage(
-                image: AssetImage(userMessages[0]['img']),
-                fit: BoxFit.cover,
-              ),
-            ),
-          ),
-        ),
-      ),
       actions: [IconButton(onPressed: (){}, icon: Icon(Icons.filter_alt_outlined,size: getsizeHeight(28),color: Colors.deepPurple,))],
     );
   }

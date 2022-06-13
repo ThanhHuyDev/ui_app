@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:ui_app/widgets/sizeconfig.dart';
+import 'package:ui_app/widgets/responsive.dart';
 
 import '../../../../../data/icons.dart';
 import '../../../../../widgets/constants.dart';

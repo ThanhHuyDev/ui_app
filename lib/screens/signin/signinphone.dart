@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ui_app/screens/signup/sign_up_screens.dart';
 import 'package:ui_app/widgets/appbar.dart';
 import 'package:ui_app/widgets/constants.dart';
-import 'package:ui_app/widgets/sizeconfig.dart';
+import 'package:ui_app/widgets/responsive.dart';
 
 class SignInPhoneScreens extends StatefulWidget {
   const SignInPhoneScreens({Key? key}) : super(key: key);

@@ -1,6 +1,7 @@
 // @dart=2.9
 import 'package:flutter/material.dart';
 import 'package:ui_app/screens/home/home_screens.dart';
+import 'package:ui_app/screens/screens.dart';
 void main() {
   runApp( const MyApp());
 }
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         fontFamily: 'Muli'
       ),
-      home: const HomeScreens(),
+      home: const SplashScreens(),
     );
   }
 }

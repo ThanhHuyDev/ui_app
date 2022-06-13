@@ -3,6 +3,7 @@ import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 
 import '../../../../data/account_json.dart';
 import '../../../../widgets/constants.dart';
+import '../../../screens.dart';
 
 class AccountPage extends StatefulWidget {
   const AccountPage({Key? key}) : super(key: key);
@@ -20,7 +21,7 @@ class _AccountPageState extends State<AccountPage> {
     );
   }
 
-Widget getBody() {
+  Widget getBody() {
     var size = MediaQuery.of(context).size;
     return ClipPath(
       clipper: OvalBottomBorderClipper(),
@@ -161,24 +162,33 @@ Widget getBody() {
                     ),
                     Column(
                       children: [
-                        Container(
-                          width: 60,
-                          height: 60,
-                          decoration: BoxDecoration(
-                            color: white,
-                            shape: BoxShape.circle,
-                            boxShadow: [
-                              BoxShadow(
-                                color: grey.withOpacity(0.1),
-                                blurRadius: 15,
-                                spreadRadius: 10,
-                              ),
-                            ],
-                          ),
-                          child: Icon(
-                            Icons.edit,
-                            size: 35,
-                            color: grey.withOpacity(0.5),
+                        GestureDetector(
+                          onTap: (() {
+                            Navigator.push(
+                                context,
+                                (MaterialPageRoute(
+                                    builder: (context) =>
+                                        const ProfileUserScreen())));
+                          }),
+                          child: Container(
+                            width: 60,
+                            height: 60,
+                            decoration: BoxDecoration(
+                              color: white,
+                              shape: BoxShape.circle,
+                              boxShadow: [
+                                BoxShadow(
+                                  color: grey.withOpacity(0.1),
+                                  blurRadius: 15,
+                                  spreadRadius: 10,
+                                ),
+                              ],
+                            ),
+                            child: Icon(
+                              Icons.edit,
+                              size: 35,
+                              color: grey.withOpacity(0.5),
+                            ),
                           ),
                         ),
                         const SizedBox(height: 10),

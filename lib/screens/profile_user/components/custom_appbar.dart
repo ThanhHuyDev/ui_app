@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ui_app/widgets/sizeconfig.dart';
+import 'package:ui_app/widgets/responsive.dart';
 
 class AppbarCustomUser extends StatelessWidget {
   AppbarCustomUser({Key? key, this.title,this.press}) : super(key: key);

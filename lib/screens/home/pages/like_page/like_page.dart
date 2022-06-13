@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ui_app/widgets/sizeconfig.dart';
+import 'package:ui_app/widgets/responsive.dart';
 
 import '../../../../data/likes_json.dart';
 import '../../../../widgets/constants.dart';

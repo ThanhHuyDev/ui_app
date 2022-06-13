@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'sizeconfig.dart';
+import 'responsive.dart';
 
 const kPrimaryColorDeepPurple = Colors.deepPurple;
 final kPrimaryColorDeepPurpleBackground = Colors.deepPurple[50];

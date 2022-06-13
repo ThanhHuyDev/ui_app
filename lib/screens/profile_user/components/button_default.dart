@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../widgets/constants.dart';
-import '../../../widgets/sizeconfig.dart';
+import '../../../widgets/responsive.dart';
 
 class ButtonDefault extends StatelessWidget {
   ButtonDefault({Key? key, this.title, this.press}) : super(key: key);

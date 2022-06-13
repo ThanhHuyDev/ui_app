@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui_app/screens/profile_setup/profile_setup2.dart';
-import 'package:ui_app/widgets/sizeconfig.dart';
+import 'package:ui_app/widgets/responsive.dart';
 
 import '../../widgets/constants.dart';
 

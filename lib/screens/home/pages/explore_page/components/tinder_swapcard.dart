@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tindercard/flutter_tindercard.dart';
-import 'package:ui_app/widgets/sizeconfig.dart';
+import 'package:ui_app/widgets/responsive.dart';
 import '../../../../../data/explore_json.dart';
 import '../../../../../widgets/constants.dart';
-import '../../profile_my_friend.dart';
+import '../../profile_friend_page/profile_myfriend_screen.dart';
 
 class TinderCard extends StatefulWidget {
   const TinderCard({Key? key}) : super(key: key);
@@ -93,7 +93,7 @@ class _TinderCardState extends State<TinderCard> {
                 width: SizeConfig.screenWidth * 0.6,
                 child: GestureDetector(
                   onTap: (){
-                     Navigator.push(context, MaterialPageRoute(builder: (context)=>const ProfileMyFriend()));
+                     Navigator.push(context, MaterialPageRoute(builder: (context)=>ProfileFriend(index: index,)));
                   },
                   child: Column(
                     children: [
@@ -116,12 +116,12 @@ class _TinderCardState extends State<TinderCard> {
                   width: SizeConfig.screenWidth * 0.2,
                   child: IconButton(
                     onPressed: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=>const ProfileMyFriend()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=> ProfileFriend(index: index,)));
                     },
                     icon: Icon(
                       Icons.insert_emoticon,
-                      color: Colors.deepPurple,
-                      size: getsizeHeight(35),
+                      color: Colors.white,
+                      size: getsizeHeight(34),
                     ),
                   ),
                 ),

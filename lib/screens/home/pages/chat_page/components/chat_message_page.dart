@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../../data/chatMes.dart';
-import '../../../data/chat_json.dart';
-import '../../../widgets/constants.dart';
+import '../../../../../data/chatMes.dart';
+import '../../../../../data/chat_json.dart';
+import '../../../../../widgets/constants.dart';
 
 class MessengerScreen extends StatefulWidget {
   const MessengerScreen({Key? key}) : super(key: key);
@@ -26,7 +26,9 @@ class _MessengerScreenState extends State<MessengerScreen> {
       automaticallyImplyLeading: false,
       title: Row(
         children: [
-          const BackButton(),
+          const BackButton(
+            color: Colors.black54,
+          ),
           CircleAvatar(
             backgroundImage: AssetImage(chats_json[0]['img']),
           ),
@@ -36,12 +38,13 @@ class _MessengerScreenState extends State<MessengerScreen> {
             children: [
               Text(
                 chats_json[0]['name'],
-                style: const TextStyle(fontSize: 16),
+                style: const TextStyle(fontSize: 16, color: Colors.black54),
               ),
               const Text(
                 'Active 3m ago',
-                style: TextStyle(fontSize: 12),
+                style: TextStyle(fontSize: 12, color: Colors.black54),
               ),
+              const SizedBox(height: 9),
             ],
           ),
         ],
@@ -49,11 +52,14 @@ class _MessengerScreenState extends State<MessengerScreen> {
       actions: [
         IconButton(
           onPressed: () {},
-          icon: const Icon(Icons.local_phone),
+          icon: const Icon(
+            Icons.local_phone,
+            color: Colors.black54,
+          ),
         ),
         IconButton(
           onPressed: () {},
-          icon: const Icon(Icons.videocam),
+          icon: const Icon(Icons.videocam, color: Colors.black54),
         ),
         const SizedBox(width: 15),
       ],

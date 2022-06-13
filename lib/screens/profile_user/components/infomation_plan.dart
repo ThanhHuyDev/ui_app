@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ui_app/widgets/sizeconfig.dart';
+import 'package:ui_app/widgets/responsive.dart';
 
 class InfomationUser extends StatelessWidget {
   InfomationUser({Key? key, this.name, this.title}) : super(key: key);

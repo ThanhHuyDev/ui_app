@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui_app/widgets/constants.dart';
-import 'package:ui_app/widgets/sizeconfig.dart';
+import 'package:ui_app/widgets/responsive.dart';
 import 'components/custom_appbar.dart';
 
 class ProfileUserPic extends StatelessWidget {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui_app/screens/signup/otp_form.dart';
-import 'package:ui_app/widgets/sizeconfig.dart';
+import 'package:ui_app/widgets/responsive.dart';
 
 class SignUpScreens extends StatefulWidget {
   const SignUpScreens({Key? key}) : super(key: key);

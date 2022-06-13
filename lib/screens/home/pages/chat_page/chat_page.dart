@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:ui_app/widgets/sizeconfig.dart';
+import 'package:ui_app/widgets/responsive.dart';
 import '../../../../data/chat_json.dart';
 import '../../../../widgets/constants.dart';
-import '../chat_message_page.dart';
+import 'components/chat_message_page.dart';
 
 class ChatPage extends StatefulWidget {
   const ChatPage({Key? key}) : super(key: key);
@@ -82,7 +82,66 @@ class _ChatPageState extends State<ChatPage> {
               },
               child: Row(
                 children: [
-                  personMessenger(index),
+                  SizedBox(
+                    width: getsizeWidth(70),
+                    height: getsizeHeight(70),
+                    child: Stack(
+                      children: [
+                        userMessages[index]['story']
+                            ? Container(
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  border: Border.all(
+                                    color: primary,
+                                    width: getsizeWidth(3),
+                                  ),
+                                ),
+                                child: Padding(
+                                  padding: EdgeInsets.all(getsizeHeight(3)),
+                                  child: Container(
+                                    width: getsizeWidth(70),
+                                    height: getsizeHeight(70),
+                                    decoration: BoxDecoration(
+                                      shape: BoxShape.circle,
+                                      image: DecorationImage(
+                                        image: AssetImage(
+                                            userMessages[index]['img']),
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              )
+                            : Container(
+                                width: getsizeWidth(70),
+                                height: getsizeHeight(70),
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  image: DecorationImage(
+                                    image:
+                                        AssetImage(userMessages[index]['img']),
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                              ),
+                        Positioned(
+                          bottom: getsizeHeight(3),
+                          right: getsizeWidth(3),
+                          child: Container(
+                              width: getsizeWidth(20),
+                              height: getsizeHeight(20),
+                              decoration: BoxDecoration(
+                                color: green,
+                                shape: BoxShape.circle,
+                                border: Border.all(
+                                  color: white,
+                                  width: getsizeWidth(3),
+                                ),
+                              )),
+                        ),
+                      ],
+                    ),
+                  ),
                   SizedBox(
                     width: getsizeWidth(20),
                   ),
@@ -119,67 +178,6 @@ class _ChatPageState extends State<ChatPage> {
             ),
           );
         }),
-      ),
-    );
-  }
-
-  Widget personMessenger(int index) {
-    return SizedBox(
-      width: getsizeWidth(70),
-      height: getsizeHeight(70),
-      child: Stack(
-        children: [
-          userMessages[index]['story']
-              ? Container(
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    border: Border.all(
-                      color: primary,
-                      width: getsizeWidth(3),
-                    ),
-                  ),
-                  child: Padding(
-                    padding: EdgeInsets.all(getsizeHeight(3)),
-                    child: Container(
-                      width: getsizeWidth(70),
-                      height: getsizeHeight(70),
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        image: DecorationImage(
-                          image: AssetImage(userMessages[index]['img']),
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                    ),
-                  ),
-                )
-              : Container(
-                  width: getsizeWidth(70),
-                  height: getsizeHeight(70),
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    image: DecorationImage(
-                      image: AssetImage(userMessages[index]['img']),
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                ),
-          Positioned(
-            bottom: getsizeHeight(3),
-            right: getsizeWidth(3),
-            child: Container(
-                width: getsizeWidth(20),
-                height: getsizeHeight(20),
-                decoration: BoxDecoration(
-                  color: green,
-                  shape: BoxShape.circle,
-                  border: Border.all(
-                    color: white,
-                    width: getsizeWidth(3),
-                  ),
-                )),
-          ),
-        ],
       ),
     );
   }

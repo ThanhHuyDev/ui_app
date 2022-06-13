@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ui_app/screens/signin/sign_in_screens.dart';
 import 'package:ui_app/widgets/constants.dart';
-import 'package:ui_app/widgets/sizeconfig.dart';
+import 'package:ui_app/widgets/responsive.dart';
 
 class SplashScreens extends StatelessWidget {
   const SplashScreens({Key? key}) : super(key: key);

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ui_app/screens/home/pages/explore_page/components/footer_tinder.dart';
 import 'package:ui_app/screens/home/pages/explore_page/components/tinder_swapcard.dart';
-import 'package:ui_app/widgets/sizeconfig.dart';
+import 'package:ui_app/widgets/responsive.dart';
 
 class ExplorePage extends StatefulWidget {
   const ExplorePage({Key? key}) : super(key: key);
